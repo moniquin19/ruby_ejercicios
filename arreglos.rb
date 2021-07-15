@@ -60,6 +60,19 @@ puts arreglo.to_s
 puts arreglo.sort!.to_s
 puts arreglo.to_s
 
+
 #%w es igual a arreglo de palabras
+# values_at devuelve los valores en la posición o posiciones indicadas
 a = %w{gato perro oso} 
 puts a.values_at(1,2).join(' y ') #=> "perro y oso"
+
+# slice se utiliza para retornar un subarreglo especificado por rango de indice
+a = [1, 4, 1, 1, 88, 9]
+puts "slice() method form : #{a.slice(2, 4)}"
+
+#join devuelve la cadena que se crea al convertir cada elemento de la matriz en una cadena, 
+#separada por el separador dado.
+
+a = [1, 4, 1, 1, 88, 9]
+puts "join : #{a.join('-')}"
+ 

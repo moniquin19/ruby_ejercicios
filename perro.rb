@@ -1,4 +1,4 @@
-require 'mamifero.rb' #Con esto vinculamos un archivo externo dentro de otro (hereda), para poder utilizarlo.
+require './mamifero.rb' #Con esto vinculamos un archivo externo dentro de otro (hereda), para poder utilizarlo.
 
 class Perro < Mamifero #acá decimos que Perro es una subclase de mamifero, por ende hereda sus atributos y métodos
     def acariciar
@@ -6,11 +6,11 @@ class Perro < Mamifero #acá decimos que Perro es una subclase de mamifero, por 
     end
 
     def caminar
-        @salud  -= 1
+        @salud -= 1
     end
 
     def correr
-        salud-= 10
+        salud -= 10
     end
 
     
